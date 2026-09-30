@@ -17,9 +17,9 @@ export default function StudentScreen({ navigation }) {
           </View>
           <Text style={styles.title}>Información del estudiante</Text>
 
-          <InfoRow icon="👤" label="Nombre" value={STUDENT.nombre} />
-          <InfoRow icon="🪪" label="Carnet" value={STUDENT.carnet} />
-          <InfoRow icon="🏫" label="Sección y grupo" value={STUDENT.seccionGrupo} />
+          <InfoRow icon="" label="Nombre" value={STUDENT.nombre} />
+          <InfoRow icon="" label="Carnet" value={STUDENT.carnet} />
+          <InfoRow icon="" label="Sección y grupo" value={STUDENT.seccionGrupo} />
         </View>
 
         <PrimaryButton title="Ver planetas de Dragon Ball  →" onPress={() => navigation.navigate('Planets')} />

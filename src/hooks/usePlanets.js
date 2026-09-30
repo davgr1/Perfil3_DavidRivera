@@ -1,10 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { ENDPOINTS, PAGE_LIMIT } from '../config/api';
 
-/**
- * Hook que consume https://dragonball-api.com/api/planets con paginación.
- * La API responde: { items: [...], meta: { totalPages, currentPage, ... }, links: {...} }
- */
+
 export default function usePlanets() {
   const [planets, setPlanets] = useState([]);
   const [page, setPage] = useState(1);

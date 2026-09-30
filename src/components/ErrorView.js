@@ -5,7 +5,7 @@ import PrimaryButton from './PrimaryButton';
 export default function ErrorView({ message, onRetry }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.emoji}>⚠️</Text>
+      <Text style={styles.emoji}></Text>
       <Text style={styles.text}>{message}</Text>
       <PrimaryButton title="Reintentar" onPress={onRetry} style={{ alignSelf: 'stretch' }} />
     </View>
